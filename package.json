@@ -12,9 +12,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@rollup/plugin-inject": "^5.0.5",
     "vite": "^5.3.5"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "vite": "^5.3.5"
   }
 }

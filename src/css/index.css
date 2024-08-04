@@ -122,3 +122,45 @@ footer {
     justify-content: center;
     font-size: 14px;
 }
+
+/* profile page css */
+
+.profile-section{
+    background-color: #f5f5f5;
+    height: 90vh;
+}
+.detail-n {
+    height: 30px;
+    background-color: #f5f5f5;
+}
+
+.detail {
+    background-color: white;
+    width: 40vw;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.detail-head {
+    display: flex;
+    height: 94px;
+}
+
+.detail-head img {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+}
+
+.detail-head-right {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
