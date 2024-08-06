@@ -15,8 +15,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'src/index.html'),
         profile: resolve(__dirname, 'src/page/profile.html'),
-        // signin: resolve(__dirname, 'src/page/signin.html'),
-        // signup: resolve(__dirname, 'src/page/signup.html'),
+        signin: resolve(__dirname, 'src/page/signin.html'),
+        signup: resolve(__dirname, 'src/page/signup.html'),
       },
     },
     outDir: '../dist'
