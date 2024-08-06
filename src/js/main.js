@@ -7,5 +7,5 @@ window.$ = $;
 
 $(".card").click(function () {
   let id = $(this).attr("id");
-  window.location.href = "/profile/profile.html?id=" + id;
+  window.location.href = "/page/profile.html?id=" + id;
 })
