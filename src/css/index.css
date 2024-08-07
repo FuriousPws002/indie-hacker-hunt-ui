@@ -49,10 +49,10 @@ header a:hover {
 }
 
 .profile a {
-    color:white;
+    color: white;
     text-decoration: none;
     border: 1px solid #ACACAC;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
 }
 
@@ -131,12 +131,90 @@ footer {
     font-size: 14px;
 }
 
+
+/*
+popup form start style
+*/
+/* 遮罩层样式 */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* 默认隐藏 */
+}
+
+.popup {
+    z-index: 999;
+    width: 520px;
+    overflow: auto;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+    /* 默认隐藏 */
+}
+
+#profile-form div {
+    margin-bottom: 5px;
+}
+
+.popup label {
+    display: inline-block;
+    width: 100px;
+}
+
+.popup input[type="text"],
+textarea {
+    width: 76%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+}
+
+.popup textarea {
+    display: block;
+    width: 96%;
+    height: 180px;
+}
+
+.popup button {
+    padding: 5px 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    background-color: #5cb85c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #4cae4c;
+}
+
+/*
+popup form end style
+*/
+
+
 /* profile page css */
 
-.profile-section{
+.profile-section {
     background-color: #f5f5f5;
     height: 90vh;
 }
+
 .detail-n {
     height: 30px;
     background-color: #f5f5f5;
