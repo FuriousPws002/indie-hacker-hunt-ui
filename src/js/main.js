@@ -131,7 +131,7 @@ function listCard() {
 
       data.result.forEach((item) => {
         $("#partner").append(
-          "<div class=\"card\" onclick=\"window.location.href='/page/profile?id=" + item['uuid'] + "'\">\n" +
+          "<div class=\"card\" onclick=\"window.location.href='/page/profile.html?id=" + item['uuid'] + "'\">\n" +
           "                <div class=\"card-head\">\n" +
           "                    <img src=\"" + item['avatar'] + "\" alt=\"\">\n" +
           "                    <div>\n" +
