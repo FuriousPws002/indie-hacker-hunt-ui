@@ -16,16 +16,19 @@
             <p>Indie Hacker Hunt</p>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/page/profile.html">Partner</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
                 </ul>
             </nav>
         </div>
         <div class="profile">
-            <img id="avatar" src="images/avatar.png" alt="">
-            <a href="/page/signin.html">Sign in</a>
-            <a href="/page/signup.html">Sign up</a>
+            <div class="login">
+                <img id="avatar" src="images/avatar.png" alt="">
+            </div>
+            <div class="not-login">
+                <a href="/page/signin.html">Sign in</a>
+                <a href="/page/signup.html">Sign up</a>
+            </div>
         </div>
     </header>
 
@@ -33,21 +36,29 @@
         <div class="overlay" id="overlay"></div>
         <div class="popup" id="popup">
             <form id="profile-form">
-                <div>
-                    <label>Nickname：</label><input type="text" value="" placeholder="Please input Nickname" />
+                <div><label>Nickname：</label><input id="nickname" type="text" value=""
+                        placeholder="Please input Nickname" /></div>
+                <div><label>You Role：</label><input id="role" type="text" value=""
+                        placeholder="Please input Role(Developer or Marketer or other)" /></div>
+                <div><label>Looking ：</label><input id="looking" type="text" value=""
+                        placeholder="Please input Looking (Developer or Marketer or other)" /></div>
+                <div><label>Email：</label><input id="email" type="text" value=""
+                        placeholder="Please input email account" />
                 </div>
-                <div><label>You Role：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Looking ：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Email：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>X(twitter)：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Facebook：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Github：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Reddit：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Website1：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Website2：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Website3：</label><input type="text" value="" placeholder="Please input Nickname" /></div>
-                <div><label>Intro：</label><textarea placeholder="fdsafdasfdsafds  fdsdsfs"></textarea></div>
-                <button type="submit">Save</button>
+                <div><label>X(twitter)：</label><input id="twitter" type="text" value=""
+                        placeholder="Please input twitter account" /></div>
+                <div><label>Github：</label><input id="github" type="text" value=""
+                        placeholder="Please input github account" /></div>
+                <div><label>Reddit：</label><input id="reddit" type="text" value=""
+                        placeholder="Please input reddit account" /></div>
+                <div><label>Website：</label><input id="website" type="text" value=""
+                        placeholder="Please input personal website" /></div>
+                <div><label>Ability</label><input id="ability" type="text" value=""
+                        placeholder="Please input ability" /></div>
+                <div><label>Intro：</label><textarea id="intro" value=""
+                        placeholder="Please input yours skills,ideas,past work experience,personal advantage and so on"></textarea>
+                </div>
+                <button id="save-profile" type="submit">Save</button>
             </form>
         </div>
 
@@ -58,139 +69,22 @@
         </section>
 
         <section id="partner">
-            <div class="card" id='123'>
+            <div class="card" onclick="window.location.href='/page/profile?id=123'">
                 <div class="card-head">
                     <img src="images/avatar.png" alt="">
                     <div>
-                        <p><strong>Sam</strong></p>
-                        <p><strong>Developers</strong></p>
+                        <p><strong class="card-head-nickname">Sam</strong></p>
+                        <p><strong class="card-head-role">Developers</strong></p>
                     </div>
                 </div>
-                <div class="card-tach">
-                    <p><span><strong>Ability:</strong></span>java,spring,MySql,Mybatis,Redis,MQ</p>
+                <div class="card-tech">
+                    <p><span><strong>Ability:</strong></span><span
+                            class="cad-tech-content">java,spring,MySql,Mybatis,Redis,MQ</span></p>
                 </div>
                 <div class="card-intro">
                     <p><strong>Intro:</strong></p>
-                    <p>Indie hacker hunt is a platform that links developers and marketers...</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/avatar.png" alt="">
-                    <div>
-                        <p><strong>Sam</strong></p>
-                        <p><strong>Developers</strong></p>
-                    </div>
-                </div>
-                <div class="card-tach">
-                    <p><span><strong>Ability:</strong></span>java,spring,MySql,Mybatis,Redis,MQ</p>
-                </div>
-                <div class="card-intro">
-                    <p><strong>Intro:</strong></p>
-                    <p>Indie hacker hunt is a platform that links developers and marketers...</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/avatar.png" alt="">
-                    <div>
-                        <p><strong>Sam</strong></p>
-                        <p><strong>Developers</strong></p>
-                    </div>
-                </div>
-                <div class="card-tach">
-                    <p><span><strong>Ability:</strong></span>java,spring,MySql,Mybatis,Redis,MQ</p>
-                </div>
-                <div class="card-intro">
-                    <p><strong>Intro:</strong></p>
-                    <p>Indie hacker hunt is a platform that links developers and marketers...</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/avatar.png" alt="">
-                    <div>
-                        <p><strong>Sam</strong></p>
-                        <p><strong>Developers</strong></p>
-                    </div>
-                </div>
-                <div class="card-tach">
-                    <p><span><strong>Ability:</strong></span>java,spring,MySql,Mybatis,Redis,MQ</p>
-                </div>
-                <div class="card-intro">
-                    <p><strong>Intro:</strong></p>
-                    <p>Indie hacker hunt is a platform that links developers and marketers...</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/avatar.png" alt="">
-                    <div>
-                        <p><strong>Sam</strong></p>
-                        <p><strong>Developers</strong></p>
-                    </div>
-                </div>
-                <div class="card-tach">
-                    <p><span><strong>Ability:</strong></span>java,spring,MySql,Mybatis,Redis,MQ</p>
-                </div>
-                <div class="card-intro">
-                    <p><strong>Intro:</strong></p>
-                    <p>Indie hacker hunt is a platform that links developers and marketers...</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/avatar.png" alt="">
-                    <div>
-                        <p><strong>Sam</strong></p>
-                        <p><strong>Developers</strong></p>
-                    </div>
-                </div>
-                <div class="card-tach">
-                    <p><span><strong>Ability:</strong></span>java,spring,MySql,Mybatis,Redis,MQ</p>
-                </div>
-                <div class="card-intro">
-                    <p><strong>Intro:</strong></p>
-                    <p>Indie hacker hunt is a platform that links developers and marketers...</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/avatar.png" alt="">
-                    <div>
-                        <p><strong>Sam</strong></p>
-                        <p><strong>Developers</strong></p>
-                    </div>
-                </div>
-                <div class="card-tach">
-                    <p><span><strong>Ability:</strong></span>java,spring,MySql,Mybatis,Redis,MQ</p>
-                </div>
-                <div class="card-intro">
-                    <p><strong>Intro:</strong></p>
-                    <p>Indie hacker hunt is a platform that links developers and marketers...</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-head">
-                    <img src="images/avatar.png" alt="">
-                    <div>
-                        <p><strong>Sam</strong></p>
-                        <p><strong>Developers</strong></p>
-                    </div>
-                </div>
-                <div class="card-tach">
-                    <p><span><strong>Ability:</strong></span>java,spring,MySql,Mybatis,Redis,MQ</p>
-                </div>
-                <div class="card-intro">
-                    <p><strong>Intro:</strong></p>
-                    <p>Indie hacker hunt is a platform that links developers and marketers...</p>
+                    <p class="cad-intro-content">Indie hacker hunt is a platform that links developers and marketers...
+                    </p>
                 </div>
             </div>
 
